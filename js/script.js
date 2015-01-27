@@ -16,12 +16,18 @@ $(function () {
 
   function updateBands(bands) {
     var i, len;
-    bandNames = $('.band-name');
-    numMentions = $('.num-mentions');
+    var ul = $('ul');
 
-    for(i = 0, len = bands.length; i < len; i++) {
-      bandNames[i].textContent = bands[i].name;
-      numMentions[i].textContent = bands[i].count;
+    ul.fadeOut('slow', function () {
+      var bandNames = $('.band-name');
+      var numMentions = $('.num-mentions');
+      
+      for(i = 0, len = bands.length; i < len; i++) {
+        bandNames[i].textContent = bands[i].name;
+        numMentions[i].textContent = bands[i].count;
+      }
+
+      ul.fadeIn('slow');
     }
   }
 
