@@ -28,7 +28,7 @@ $(function () {
       }
 
       ul.fadeIn('slow');
-    }
+    });
   }
 
   buildBandItems(NUM_BANDS);
