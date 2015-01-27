@@ -26,7 +26,7 @@ $(function () {
   }
 
   buildBandItems(NUM_BANDS);
-  var poller = new massrel.Poller({frequency: NUM_BANDS, limit: 5},
+  var poller = new massrel.Poller({frequency: 15, limit: NUM_BANDS},
     updateBands);
   poller.start();
 });
