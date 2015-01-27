@@ -4,10 +4,13 @@ $(function () {
   function buildBandItems(num) {
     var i;
     var ul = $('ul');
-    var li = '<li><span class="band-name"></span>' +
-                    '<span class="mentions-container">' +
-                      '<span class="num-mentions"></span>' +
-                      '<span class="mention"> Mentions</span></span></li>';
+    var li = '<li>' +
+               '<span class="band-name"></span>' +
+               '<span class="mentions-container">' +
+                 '<span class="num-mentions"></span>' +
+                 '<span class="mention"> Mentions</span>' +
+               '</span>' +
+             '</li>';
 
     for(i = 0; i < num; i++) {
       ul.append(li);
