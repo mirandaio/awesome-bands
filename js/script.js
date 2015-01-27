@@ -7,7 +7,7 @@ $(function () {
     var li = '<li><span class="band-name"></span>' +
                     '<span class="mentions-container">' +
                       '<span class="num-mentions"></span>' +
-                      '<span class="mention">Mentions</span></span></li>';
+                      '<span class="mention"> Mentions</span></span></li>';
 
     for(i = 0; i < num; i++) {
       ul.append(li);
@@ -20,8 +20,8 @@ $(function () {
     numMentions = $('.num-mentions');
 
     for(i = 0, len = bands.length; i < len; i++) {
-      bandNames[i].textContent = bands[0].name;
-      numMentions[i].textContent = bands[0].count;
+      bandNames[i].textContent = bands[i].name;
+      numMentions[i].textContent = bands[i].count;
     }
   }
 
