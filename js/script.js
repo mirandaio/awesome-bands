@@ -10,7 +10,7 @@ $(function () {
                       '<span class="mention">Mentions</span></span></li>';
 
     for(i = 0; i < num; i++) {
-      ul.append(liStr);
+      ul.append(li);
     }
   }
 
