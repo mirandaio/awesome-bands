@@ -1,5 +1,4 @@
 $(function () {
-  var NUM_BANDS = 5;
 
   function buildBandItems(num) {
     var i;
@@ -29,6 +28,7 @@ $(function () {
     });
   }
 
+  var NUM_BANDS = 5;
   var ul = $('ul');
   buildBandItems(NUM_BANDS);
   var bandNames = $('.band-name');
